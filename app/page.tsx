@@ -4,7 +4,9 @@ import VideoCard from "./components/VideoCard";
 export default function Home() {
   return (
     <div>
-      <VideoCard />
+      <VideoCard 
+      title={"Wolverine GamePlay Trailer"}
+      image={"wolverine.jpg"} />
     </div>
   )
 }
