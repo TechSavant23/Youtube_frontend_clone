@@ -2,7 +2,7 @@ import VideoCard from "./VideoCard";
 
 const VIDEOS= [
   {
-  title:"Wolverine GamePlay Trailer | PlayStation | PS5-Games",
+  title:"Wolverine GamePlay Trailer | PlayStation | PS5 - Games",
   image:"wolverine.jpg",
   channelProfile:"playstation.jpg",
   channelName:"PlayStation",
@@ -18,7 +18,7 @@ const VIDEOS= [
   views:"6.1M views"
   },
   {
-  title:"The Legend of Zelda: Echoes — New Gameplay | Nintendo Switch",
+  title:"The Legend of Zelda: Echoes - New Gameplay | Nintendo Switch",
   image:"zelda.jpg",
   channelProfile:"nintendo.jpg",
   channelName:"Nintendo",
@@ -26,7 +26,7 @@ const VIDEOS= [
   views:"980K views"
   },
   {
-  title:"Forza Motorsport — Real Driving Experience | Xbox Series X",
+  title:"Forza Motorsport - Real Driving Experience | Xbox Series X",
   image:"forza.jpg",
   channelProfile:"xbox.jpg",
   channelName:"Xbox",
@@ -34,7 +34,7 @@ const VIDEOS= [
   views:"1.2M views"
   },
   {
-  title:"Cyberpunk 2077: Phantom Liberty — Story Trailer",
+  title:"Cyberpunk 2077: Phantom Liberty - Story Trailer",
   image:"cyberpunk_phantom.jpg",
   channelProfile:"cdprojekt.jpg",
   channelName:"CD Projekt RED",
@@ -47,6 +47,7 @@ export default function VideoGrid() {
     return <div className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-1">
         {VIDEOS.map (videos => 
                 <VideoCard 
+                key={videos.title}
                 title={videos.title}
                 image={videos.image}
                 channelProfile={videos.channelProfile}
