@@ -1,5 +1,3 @@
-import Image from "next/image";
-import VideoCard from "./components/VideoCard";
 import VideoGrid from "./components/VideoGrid";
 import AppBar from "./components/AppBar";
 
