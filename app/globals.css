@@ -19,6 +19,25 @@
   }
 }
 
+/* Tailwind v4 animation setup */
+/* @theme {
+  @keyframes slide-out-left {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+
+  .animate-slide-out-left {
+    animation: slide-out-left 0.5s ease-out forwards;
+  }
+} */
+
+
 body {
   background: var(--background);
   color: var(--foreground);
